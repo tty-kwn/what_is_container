@@ -1,4 +1,4 @@
-# Podman Desktop のインストール
+# Podman Desktop のインストール と　Podmanコマンドの使い方
 
 ## Podman Desktop for Windows のインストール
 **公式ページ**：[Windowsインストーラを使って Podman Desktop をインストールする方法](https://podman-desktop.io/docs/Installation/windows-install)
