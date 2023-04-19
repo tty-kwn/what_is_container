@@ -3,8 +3,8 @@
 任意のフォルダにContainerfileというファイルを作ります。
 例えば、
 ```
-mkdir ~/work/103
-cd ~/work/103
+mkdir ~/work/104
+cd ~/work/104
 echo "Hello World" > messagefile
 vi Containerfile
 ```
@@ -23,3 +23,9 @@ https://qiita.com/mintak21/items/a6766e3efd6730c9519d
 
 DockerfileもContainerfileも同じ。「Podman」なので「Docker」fileではなく「Container」file。
 
+ビルド実行
+```
+podman build .
+```
+
+TODO 出力結果
