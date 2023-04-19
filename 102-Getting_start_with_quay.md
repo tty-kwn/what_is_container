@@ -5,7 +5,7 @@ Quayは「キー」と呼ぶそうです。
 
 ## Quay.ioでアカウント作成
 Red Hatアカウントを持っている人がQuay.ioにはいって操作
-## https://docs.quay.io/solution/getting-started.html
+https://docs.quay.io/solution/getting-started.html
 
 ### Quay.io にサインインする
 podman login quay.ioコマンドを実行します。
