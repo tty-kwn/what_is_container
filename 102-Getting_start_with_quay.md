@@ -8,9 +8,19 @@ Red Hatアカウントを持っている人がQuay.ioにはいって操作
 
 https://docs.quay.io/solution/getting-started.html
 
-### Quay.io にサインインする
-podman login quay.ioコマンドを実行します。
+### Quay.io を使い始める
+https://quay.io にアクセスします。
 
+右上のSIGN INをクリックしてください。
+
+注) 「Try for Free on Cloud」をクリックしないで下さい
+
+Red Hat アカウントの SSO ページが表示されたら、自身のRed Hat アカウントを入力して下さい。
+
+Help!) かわのはすでにこの作業を終えていて、どんな手順で利用可能になったか覚えていません。だれか画面共有して見せて&画像ください
+
+### Quay.io にサインインする
+コンソール作業に戻ります。loginコマンドでサインインします。
 ```
 podman login quay.io
 ```
@@ -36,9 +46,9 @@ podman ps -a
 podman commit <container id> quay.io/<username>/<reponame>
 ```
 
-<container id>: 先ほど書き留めたコンテナID
-<username>: Quay.io のユーザ名
-<reponame>: 新しく作成したコンテナの名前
+`<container id>`: 先ほど書き留めたコンテナID<br/>
+`<username>`: Quay.io のユーザ名<br/>
+`<reponame>`: 新しく作成したコンテナの名前
 
 
 ### コンテナイメージを Quay.io にプッシュする
