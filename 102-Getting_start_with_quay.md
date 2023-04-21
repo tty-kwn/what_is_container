@@ -4,11 +4,10 @@ Red Hatのコンテナレジストリ「Quay.io」にアカウントを作り、
 Quayは「キー」と呼ぶそうです。
 
 ## Quay.ioでアカウント作成
-Red Hatアカウントを持っている人がQuay.ioにはいって操作
+Red Hatアカウントを持っていることが前提です。
 
-https://docs.quay.io/solution/getting-started.html
+(Red Hat アカウントの作成方法はUIが変更されやすいこともあり、特にガイドはありません。やり方は「Red Hatアカウント作成」などで検索してみてください。
 
-### Quay.io を使い始める
 https://quay.io にアクセスします。
 
 右上のSIGN INをクリックしてください。
@@ -19,13 +18,19 @@ Red Hat アカウントの SSO ページが表示されたら、自身のRed Hat
 
 Help!) かわのはすでにこの作業を終えていて、どんな手順で利用可能になったか覚えていません。だれか画面共有して見せて&画像ください
 
-### Quay.io にサインインする
+## Quay.io にサインインする
 コンソール作業に戻ります。loginコマンドでサインインします。
 ```
 podman login quay.io
 ```
 
 ユーザ名とパスワードを求められるので、Quay.ioで設定した情報を入力します。
+
+## Quay.io を使ってみよう
+
+こちらのページをpodmanに置き換えて実行します。
+
+https://docs.quay.io/solution/getting-started.html
 
 ### 新しいコンテナを作成する
 コンテナイメージ ubuntu を実行し、新しいファイルを含むコンテナを新たに作成します。
