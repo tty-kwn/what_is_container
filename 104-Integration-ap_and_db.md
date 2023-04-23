@@ -64,22 +64,15 @@ podman run -d --name red-redmine --network r-nw -e REDMINE_DB_POSTGRES=red-postg
 では、ブラウザでhttp://localhost:8081 にアクセスしてみましょう。Redmineのそっけないページが表示されましたか？
 1. デフォルトの管理者ユーザ名とパスワードは両方`admin`です。右上の「ログイン」からログインしてみてください。
 2. パスワードを変更してください。なんでもOKです。
-3. 適当に操作してみてください。例えば、「test1」プロジェクトを作成しましょう。
-一旦ログアウトします。
+3. 適当に操作して、永続化必須な操作をしてみてください。例えば、「test1」プロジェクトを作成しましょう。
+一旦ログアウトし、postgresqlコンテナを残したまま、redmineアプリケーションコンテナだけ削除します。コマンドは以下です。<br/>
+Hint) rm に"-f"をつけると、コンテナを停止することなくコンテナを強制削除することができます。`stop`から`rm`という手順が面倒な場合は、こちらもご利用ください。
 
-
-
-
-
-
-
-<details>
-<summary>実行例</summary>
-  
 ```
-$ podman run -d --name red-postgres --network red-network -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
-REPOSITORY                         TAG         IMAGE ID      CREATED     SIZE
-registry.fedoraproject.org/fedora  latest      c9bfca6d0ac2  3 days ago  196 MB
-localhost/helloworld               1.0         016f667375a7  6 days ago  437 MB
+podman rm -f red-redmine
+podman run -d --name red-redmine --network r-nw -e REDMINE_DB_POSTGRES=red-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret -p 8081:3000 redmine
 ```
-</details>
+
+管理者パスワードは変更したものでログインできましたか？先程作成したプロジェクトは消えていませんか？これらはDBにデータが保存されているから実現できています。
+ということで、APサーバとDBサーバの連携例でした。
+
