@@ -194,3 +194,5 @@ Hello WorldのAAが表示されましたね。
 
 dockerfileには多くのコマンドがあり、すべては紹介しきれません。より多くのコマンドを知りたい方は、以下をご確認ください。
 * Dockerfileリファレンス(日本語翻訳版): https://docs.docker.jp/engine/reference/builder.html
+
+ 注) ContainerfileもDockerfileも、どっちも同じ構文です。
