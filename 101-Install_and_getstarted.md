@@ -1,4 +1,4 @@
-# Podman Desktop のインストール と　Podmanコマンドの使い方
+# Podman Desktop のインストールとPodmanコマンドの使い方
 
 ## Podman Desktop for Windows のインストール
 **公式ページ**：[Windowsインストーラを使って Podman Desktop をインストールする方法](https://podman-desktop.io/docs/Installation/windows-install)
@@ -473,6 +473,7 @@ root@670148e96359:/#
 ```
 </details>
 
+Ubuntuが起動し、bashが実行されています。
 
 別のターミナル「ターミナル[2]」で実行
 ```
@@ -493,6 +494,8 @@ Storing signatures
 [root@f18f6f12358e /]#
 ```
 </details>
+
+fedoraが起動し、bashが実行されています。
 
 さらに別のターミナル「ターミナル[3]」で実行
 ```
