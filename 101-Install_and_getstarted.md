@@ -478,7 +478,7 @@ Ubuntuが起動し、bashが実行されています。
 
 別のターミナル「ターミナル[2]」で実行
 ```
-podman run -it --name fedora-t2 fedoraos bash
+podman run -it --name fedora-t2 fedora bash
 ```
 
 <details>
