@@ -12,7 +12,7 @@ vi Containerfile
 Containerfileには、以下を記載します。
 ```
 FROM fedora
-RUN yum update && yum -y install figlet
+RUN yum -y update && yum -y install figlet
 ADD ./messagefile /messagefile
 CMD cat /messagefile | figlet
 ```
@@ -25,7 +25,7 @@ DockerfileもContainerfileも同じ。「Podman」なので「Docker」fileで�
 
 ビルド実行
 ```
-podman build --tag helloworld:1.0 .
+podman build --tag hw:1.0 .
 ```
 
 <details>
@@ -156,23 +156,23 @@ podman images
 $ podman images
 REPOSITORY                         TAG         IMAGE ID      CREATED     SIZE
 registry.fedoraproject.org/fedora  latest      c9bfca6d0ac2  3 days ago  196 MB
-localhost/helloworld               1.0         016f667375a7  6 days ago  437 MB
+localhost/hw                       1.0         016f667375a7  6 days ago  437 MB
 ```
 </details>
 
-localhostにhelloworldというコンテナが、TAG1.0で作成されているのを確認できました。
+localhostにhwというコンテナが、TAG1.0で作成されているのを確認できました。
 
 では、早速実行してみましょう。
 
 ```
-podman run helloworld:1.0
+podman run hw:1.0
 ```
 
 <details>
 <summary>実行例</summary>
   
 ```
-$ podman run helloworld:1.0
+$ podman run hw:1.0
  _   _      _ _        __        __         _       _
 | | | | ___| | | ___   \ \      / /__  _ __| | ____| |
 | |_| |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ / _` |
