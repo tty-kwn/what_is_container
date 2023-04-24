@@ -460,6 +460,7 @@ podman run -it ubuntu bash
 
 <details>
 <summary>実行例</summary>
+ 
 ```
 $ podman run -it ubuntu bash
 Resolved "ubuntu" as an alias (/etc/containers/registries.conf.d/000-shortnames.conf)
@@ -482,6 +483,7 @@ podman run -it --name fedora-t2 fedoraos bash
 
 <details>
 <summary>実行例</summary>
+ 
 ```
 $ podman run -it --name fedora-t2 fedora bash
 Resolved "fedora" as an alias (/etc/containers/registries.conf.d/000-shortnames.conf)
@@ -504,6 +506,7 @@ podman ps
 
 <details>
 <summary>実行例</summary>
+ 
 ```
 $ podman ps
 CONTAINER ID  IMAGE                                     COMMAND     CREATED     STATUS         PORTS       NAMES
@@ -523,6 +526,7 @@ podman ps
 
 <details>
 <summary>実行例</summary>
+ 
 ```
 $ podman ps
 CONTAINER ID  IMAGE                                     COMMAND     CREATED     STATUS         PORTS       NAMES
@@ -540,6 +544,7 @@ podman exec -it fedora-t2 bash
 
 <details>
 <summary>実行例</summary>
+ 
 ```
 $ podman exec -it fedora-t2 bash
 [root@f18f6f12358e /]#
