@@ -70,9 +70,14 @@ Hint) rm に"-f"をつけると、コンテナを停止することなくコン�
 
 ```
 podman rm -f red-redmine
+```
+
+5. 再度、redmineアプリケーションコンテナを起動します。コマンドは以下です。
+```
 podman run -d --name red-redmine --network r-nw -e REDMINE_DB_POSTGRES=red-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret -p 8081:3000 redmine
 ```
 
 管理者パスワードは変更したものでログインできましたか？先程作成したプロジェクトは消えていませんか？これらはDBにデータが保存されているから実現できています。
+
 ということで、APサーバとDBサーバの連携例でした。
 
