@@ -24,12 +24,13 @@
 Podman DesktopはあくまでGUI。Podman engineの導入が別途必要です。
 Windowsの場合、Podman engine自体は仮想マシン上のLinuxで動作させる必要があります。
 
-1. PowerShell画面を管理者権限で起動
-2. WSLをLinux(デフォルトUbuntu)抜きでインストール
-   * wsl --install --no-distribution
-3. Podman Desktopで「Install」ボタンクリック
-4. Podmanインストーラは全てデフォルトのままインストールしてしまう
-5. 「Initialize Podman」ボタンクリック。
+1. (WSLがインストールされていない人のみ)
+   * PowerShell画面を管理者権限で起動
+   * WSLをLinux(デフォルトUbuntu)抜きでインストール
+      * wsl --install --no-distribution
+4. Podman Desktopで「Install」ボタンクリック
+5. Podmanインストーラは全てデフォルトのままインストールしてしまう
+6. 「Initialize Podman」ボタンクリック。
    * `podman machine init && podman machine start` をおこなってくれている 
 
 ## Podman Desktop for mac のインストール
